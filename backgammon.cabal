@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: c63dd22f5e8234e93e87cd3b6642851b97013c68c259b9560f849eb2c68bb567
+-- hash: 9d4ec4dc41c8453b1209b8ecf1685684edcf8526463a255b8e86ae2b4c6c9b4b
 
 name:           backgammon
 version:        0.1.0.0
@@ -35,6 +35,7 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , random
   default-language: Haskell2010
 
 executable backgammon-exe
@@ -47,6 +48,8 @@ executable backgammon-exe
   build-depends:
       backgammon
     , base >=4.7 && <5
+    , random
+    , time
   default-language: Haskell2010
 
 test-suite backgammon-test

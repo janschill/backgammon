@@ -24,6 +24,8 @@ dependencies:
 
 library:
   source-dirs: src
+  dependencies:
+  - random
 
 executables:
   backgammon-exe:
@@ -35,6 +37,8 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - backgammon
+    - random
+    - time
 
 tests:
   backgammon-test:
