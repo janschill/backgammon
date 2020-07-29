@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 9d4ec4dc41c8453b1209b8ecf1685684edcf8526463a255b8e86ae2b4c6c9b4b
+-- hash: 0014c28b7bc76b853c764bf6675e979c7b6bdf367eb8cea2a59a16d0cce92694
 
 name:           backgammon
 version:        0.1.0.0
@@ -28,6 +28,7 @@ source-repository head
 library
   exposed-modules:
       Lib
+      Print
       Rng
   other-modules:
       Paths_backgammon
